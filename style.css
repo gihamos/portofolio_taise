@@ -43,9 +43,21 @@ body {
 }
 
 .karo {
-  height: 100%; /* tu peux ajuster : 300px, 500px selon ton design */
+  height: 100%; 
 }
 .karo img {
-  object-fit: cover; /* recadre l'image proprement */
-  object-position: center; /* centre l'image */
+  object-fit: cover; 
+  object-position: center;
+}
+
+.text_apropos{
+  text-align: justify;
+}
+.text_credo{
+  text-align: justify;
+  text-decoration: dotted;
+  color: lightslategray;
+  border:2px solid lightsalmon;
+  background-color: black;
+  
 }
