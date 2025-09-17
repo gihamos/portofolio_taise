@@ -7,16 +7,17 @@ body.dark-mode {
 }
 
 body.dark-mode .glass{
-  color: aliceblue;
+  color: rgb(156, 163, 169);
 }
 body.light-mode {
-  background: #f8f9fa;
+  background: url("https://wallpapercave.com/wp/wp8561052.png");
+  background-size: cover;
   color: #212529;
 }
 
 body.light-mode .glass {
-  background: rgba(255, 255, 255, 0.8);
   color: #212529;
+  border: 1px solid black;
 }
 .glass {
   background: rgba(255, 255, 255, 0.1);
@@ -73,6 +74,9 @@ body.light-mode .glass {
 .hero {
   min-height: 100vh;
   padding-top: 100px; /* espace pour la navbar fixe */
-  background: rgba(0, 0, 0, 0.5);
+ 
+}
+.details-projet{
+  text-align: justify;
 }
 
