@@ -1,11 +1,23 @@
-body {
+body.dark-mode {
     /*   image de font https://picsum.photos/1920/1080?blur*/
   background: url('https://images.pexels.com/photos/847402/pexels-photo-847402.jpeg') no-repeat center center fixed;
   background-size: cover;
   color: white;
-  scroll-behavior:smooth;
+  /*scroll-behavior:smooth;*/
 }
 
+body.dark-mode .glass{
+  color: aliceblue;
+}
+body.light-mode {
+  background: #f8f9fa;
+  color: #212529;
+}
+
+body.light-mode .glass {
+  background: rgba(255, 255, 255, 0.8);
+  color: #212529;
+}
 .glass {
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(10px);
@@ -63,3 +75,4 @@ body {
   padding-top: 100px; /* espace pour la navbar fixe */
   background: rgba(0, 0, 0, 0.5);
 }
+

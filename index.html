@@ -9,15 +9,19 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-mode">
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top glass-nav">
+  <button id="themeToggle" class="btn btn-outline-light ms-3 light-mode" title="Changer le thème">
+  <i class="bi bi-moon-stars-fill"></i>
+</button>
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">Portfolio – Taïse</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" title="afficher le menu">
       <span class="navbar-toggler-icon"></span>
     </button>
+    
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#about">Présentation</a></li>
@@ -40,10 +44,54 @@
     Mon parcours universitaire, de la Licence Informatique à Angers puis au Mans, m’a permis d’acquérir une solide maîtrise des fondamentaux du développement logiciel, des systèmes et des architectures distribuées</p>
   <p class="text_apropos">Curieux, rigoureux et orienté solution, je me distingue par ma capacité à apprendre rapidement et à m’adapter à des environnements techniques variés. Mes projets personnels et académiques témoignent de mon engagement et de ma créativité, 
     notamment dans le développement fullstack, l’intelligence artificielle et le DevOps.</p>
-    <p class="text_apropos">Je suis à la recherche d’une alternance ou de contrat pro en développement informatique (rythme 1 semaine école / 3 semaines entreprise) pour mettre mes compétences au service de projets innovants et contribuer activement à la réussite d’une équipe technique.</p>
+    <p class="text_apropos" ><strong style="color: darkgreen;"> Je suis à la recherche d’une alternance ou de contrat pro en développement informatique (rythme 1 semaine école / 3 semaines entreprise)</strong> pour mettre mes compétences au service de projets innovants et contribuer activement à la réussite d’une équipe technique.</p>
   <h5 class="text_credo"><strong>Mon credo: </strong>apprendre vite, coder propre, livrer utile.</h5>
   </section>
  </header>
+ <!--- section experience pro-->
+ <section id="experience" class="container my-5">
+  <h2 class="text-center mb-4">🧑‍💼 Expériences Professionnelles</h2>
+  <div class="row g-4">
+
+    <!-- Expérience 1 -->
+    <div class="col-md-6">
+      <div class="card glass h-100 p-4">
+        <div class="d-flex align-items-center mb-3">
+          <i class="bi bi-laptop fs-3 text-warning me-3"></i>
+          <div>
+            <h5 class="mb-0">Développeur Web – Université d’Angers</h5>
+            <small class="text-muted">2024 · Stage académique</small>
+          </div>
+        </div>
+        <p>Conception d’une application de suivi scolaire avec Symfony et PostgreSQL.  
+        Mise en place d’un système d’authentification, génération de rapports PDF, et gestion des rôles utilisateurs.</p>
+        <span class="badge bg-secondary">Symfony</span>
+        <span class="badge bg-secondary">PostgreSQL</span>
+        <span class="badge bg-secondary">Git</span>
+      </div>
+    </div>
+
+    <!-- Expérience 2 -->
+    <div class="col-md-6">
+      <div class="card glass h-100 p-4">
+        <div class="d-flex align-items-center mb-3">
+          <i class="bi bi-person-workspace fs-3 text-info me-3"></i>
+          <div>
+            <h5 class="mb-0">Moniteur Numérique – Université d’Angers</h5>
+            <small class="text-muted">2022 · Mission étudiante</small>
+          </div>
+        </div>
+        <p>Accompagnement des étudiants dans l’usage des outils numériques, résolution de problèmes techniques, et animation d’ateliers d’initiation à Linux et Git.</p>
+        <span class="badge bg-secondary">Support technique</span>
+        <span class="badge bg-secondary">Linux</span>
+        <span class="badge bg-secondary">Communication</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ <!-- section projet  -->
 <section id="projects" class="container my-5">
   <h2 class="text-center">🚀 Projets</h2>
 
@@ -63,8 +111,8 @@
               <img src="assets/sudoHelp2.jpg" class="img-fluid rounded mb-3" alt="Sudo-help">
               <h5>Sudo-help</h5>
               <p>Jeu Sudoku en JavaFX avec logs et SQLite.</p>
-              <a href="https://github.com/Enzo-mor/Sudo-help" class="btn btn-outline-light" target="_blank">GitHub</a>
-              <button  class="video-btn btn btn-outline-light" data-video="kLerl5zVj6I" title="veuillez cliquer pour afficher la demo">voir demo</button>
+              <a href="https://github.com/Enzo-mor/Sudo-help" class="btn btn-outline-secondary github-btn" target="_blank" rel="noopener">GitHub</a>
+              <button  class="video-btn btn btn-outline-secondary" data-video="kLerl5zVj6I" title="veuillez cliquer pour afficher la demo">voir demo</button>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-12 ">
@@ -72,8 +120,8 @@
               <img src="assets/gtosint.jpg" class="img-fluid rounded mb-3" alt="GTOsint">
               <h5>GTOsint</h5>
               <p>Application collaborative MEAN stack avec sécurité et CI/CD.</p>
-              <a href="https://github.com/GTOsint/GTOsint" class="btn btn-outline-light" target="_blank">GitHub</a>
-              <button  class="video-btn btn btn-outline-light" data-video="O1bPBxE6jRI" title="veuillez cliquer pour afficher la demo">voir demo</button>
+              <a href="https://github.com/GTOsint/GTOsint" class="btn btn-outline-secondary github-btn" target="_blank" rel="noopener">GitHub</a>
+              <button  class="video-btn btn btn-outline-secondary" data-video="O1bPBxE6jRI" title="veuillez cliquer pour afficher la demo">voir demo</button>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-12">
@@ -81,13 +129,13 @@
               <img src="assets/ml.png" class="img-fluid rounded mb-3" alt="Machine Learning">
               <h5>Machine Learning</h5>
               <p>Classification d’émotions avec Python / scikit-learn.</p>
-              <a href="https://github.com/gihamos/machinelearning" class="btn btn-outline-light" target="_blank">GitHub</a>
+              <a href="https://github.com/gihamos/machinelearning" class="btn btn-outline-secondary github-btn" target="_blank" rel="noopener">GitHub</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Slide 2 (autres projets si besoin) -->
+      <!-- Slide 2 -->
       <div class="carousel-item">
         <div class="row g-3">
           <div class="col-md-4 col-sm-6 col-12">
@@ -95,21 +143,21 @@
               <img src="assets/autre.png" class="img-fluid rounded mb-3" alt="Autre projet">
               <h5>Autre projet</h5>
               <p>Description rapide.</p>
-              <a href="#" class="btn btn-outline-light">GitHub</a>
+              <a href="#" class="btn btn-outline-secondary github-btn">GitHub</a>
             </div>
           </div>
-          <!-- tu peux ajouter 2 autres projets ici -->
+        
         </div>
       </div>
 
     </div>
 
     <!-- Contrôles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev" title="passer au slide précedent">
       <span class="bi bi-arrow-left-circle fs-1 text-white " style="background-color: goldenrod;"></span>
   </button>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next" title="passer au slide suivant">
       <span class="bi bi-arrow-right-circle fs-1 text-white " style="background-color: goldenrod;"></span>
   </button>
     </button>
@@ -120,31 +168,87 @@
 
 <!-- Section Compétences -->
 <section id="skills" class="container my-5">
-  <h2 class="text-center">💻 Compétences</h2>
-  <div class="row text-center">
-    <div class="col-md-6">
-      <ul class="list-group glass">
-        <li class="list-group-item bg-transparent text-white">Réseaux & Systèmes : Linux, TCP/IP, DHCP/DNS</li>
-        <li class="list-group-item bg-transparent text-white">Administration systèmes & sécurité</li>
-        <li class="list-group-item bg-transparent text-white">Automatisation : Python, Bash, SQL</li>
-      </ul>
+  <h2 class="text-center mb-4">💻 Compétences</h2>
+  <div class="row g-4">
+
+    <!-- Langages de programmation -->
+    <div class="col-md-4">
+      <div class="card glass h-100 text-center p-3">
+        <h5><i class="bi bi-terminal"></i> Langages</h5>
+        <ul class="list-unstyled mt-3">
+          <li>Java, Python, C/C++, PHP, Ruby</li>
+          <li>JavaScript / TypeScript, Bash</li>
+          <li>R, Prolog, Haskell</li>
+        </ul>
+      </div>
     </div>
-    <div class="col-md-6">
-      <ul class="list-group glass">
-        <li class="list-group-item bg-transparent text-white">DevOps : Docker, Git, CI/CD</li>
-        <li class="list-group-item bg-transparent text-white">Développement : Java, Node.js, Angular</li>
-        <li class="list-group-item bg-transparent text-white">Bases de données : MySQL, PostgreSQL, MongoDB</li>
-      </ul>
+
+    <!-- Backend & DevOps -->
+    <div class="col-md-4">
+      <div class="card glass h-100 text-center p-3">
+        <h5><i class="bi bi-server"></i> Backend & DevOps</h5>
+        <ul class="list-unstyled mt-3">
+          <li>Node.js, Express.js, Symfony, FastAPI</li>
+          <li>API REST, Docker, Git, CI/CD</li>
+        </ul>
+      </div>
     </div>
+
+    <!-- Frontend -->
+    <div class="col-md-4">
+      <div class="card glass h-100 text-center p-3">
+        <h5><i class="bi bi-window"></i> Frontend</h5>
+        <ul class="list-unstyled mt-3">
+          <li>Angular, React, Django</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bases de données -->
+    <div class="col-md-4">
+      <div class="card glass h-100 text-center p-3">
+        <h5><i class="bi bi-database"></i> Bases de données</h5>
+        <ul class="list-unstyled mt-3">
+          <li>PostgreSQL, MySQL, MongoDB</li>
+          <li>SQLite</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Réseaux & Systèmes -->
+    <div class="col-md-4">
+      <div class="card glass h-100 text-center p-3">
+        <h5><i class="bi bi-hdd-network"></i> Réseaux & Systèmes</h5>
+        <ul class="list-unstyled mt-3">
+          <li>Linux, VirtualBox</li>
+          <li>Notions en communication réseau</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Méthodologies & Langues -->
+    <div class="col-md-4">
+      <div class="card glass h-100 text-center p-3">
+        <h5><i class="bi bi-tools"></i> Méthodologies & Langues</h5>
+        <ul class="list-unstyled mt-3">
+          <li>Agile / Scrum, UML, Design Patterns</li>
+          <li>Algorithmique appliquée</li>
+          <li>Français (maternelle), Anglais (B2)</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 </section>
+
 
 <!-- Section Contact -->
 <section id="contact" class="container text-center my-5">
   <h2>📬 Contact</h2>
   <p>Email : <a href="mailto:gihamos@gmail.com">gihamos@gmail.com</a></p>
-  <p>GitHub : <a href="https://github.com/gihamos" target="_blank">github.com/gihamos</a></p>
-  <p>LinkedIn : <a href="https://linkedin.com/in/gihamos" target="_blank">linkedin.com/in/gihamos</a></p>
+  <p>GitHub : <a href="https://github.com/gihamos" target="_blank" rel="noopener">github.com/gihamos</a></p>
+  <p>LinkedIn : <a href="https://linkedin.com/in/gihamos" target="_blank" rel="noopener">linkedin.com/in/gihamos</a></p>
   <a href="assets/cv.pdf" class="btn btn-primary" target="_blank">Télécharger mon CV</a>
 </section>
 

@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
       closeBtn.style.cssText = "position:absolute; top:10px; right:10px; font-size:20px; background:none; color:white; border:none; cursor:pointer;";
       closeBtn.addEventListener('click', () => {
           modal.remove();
-          carousel.cycle(); // relance le carousel
+          carousel.cycle();
       });
 
       videoContainer.appendChild(iframe);
@@ -64,3 +64,54 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+
+document.querySelectorAll('a.nav-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+const toggleBtn = document.querySelector('#themeToggle');
+
+toggleBtn.addEventListener('click', () => {
+  if (document.body.classList.contains('light-mode')) {
+    document.body.classList.remove('light-mode');
+    document.body.classList.add('dark-mode');
+    document.querySelectorAll(".github-btn").forEach(e=>{
+    e.classList.remove("btn-outline-light");
+    e.classList.add("btn-outline-secondary");
+    });
+  } else {
+    document.body.classList.remove('dark-mode');
+    document.body.classList.add('light-mode');
+    document.querySelectorAll(".github-btn").forEach(e=>{
+    e.classList.remove("btn-outline-light")
+    e.classList.add("btn-outline-secondary")
+
+
+    })
+    document.querySelectorAll(".list-group-item").forEach(e=>{
+    e.classList.remove("text-light");
+    e.classList.add("text-dart");
+     
+    });
+  }
+});
+
+document.addEventListener('click', function (event) {
+  const navbar = document.querySelector('.navbar-collapse');
+  const isOpen = navbar.classList.contains('show');
+  const isClickInsideNavbar = event.target.closest('.navbar');
+
+  if (isOpen && !isClickInsideNavbar) {
+    const bsCollapse = new bootstrap.Collapse(navbar, {
+      toggle: false
+    });
+    bsCollapse.hide();
+  }
+});
+
+
