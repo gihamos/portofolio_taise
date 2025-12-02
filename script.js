@@ -2,7 +2,7 @@
 // Persisted settings
 // ================================
 let currentLang = localStorage.getItem('lang') || 'fr';
-let currentTheme = localStorage.getItem('theme') || 'light';
+let currentTheme = localStorage.getItem('theme') || 'dark';
 
 // ================================
 // Données bilingues (contenu)
@@ -19,16 +19,22 @@ const translations = {
       "Curieux, rigoureux, orienté solution, j’apprécie les architectures modulaires et la documentation claire."
     ],
     motto: "Credo : construire clairement, itérer avec finesse, documenter élégamment.",
-    exp_title: "🧑‍💼 Expériences Professionnelles",
+    exp_title: " Expériences Professionnelles",
     experiences: [
-      { title: "Développeur Web – Université d’Angers", date: "2024 · Stage académique", icon: "bi bi-laptop text-warning",
+      { title: "Data Anlyst- ICC", date: "2022-2024 · benevolat", icon: "bi bi-person-workspace text-info",
+          description: "Automatisation formulaires, elaboartion des dashboards interactifs et  rappels automatiques et mise en relation automatique visiteur-encadrant",
+        skills: ["Power Bi/looker", "excel/googlesheet", "Google/Microsoft Forms","VBA/AppScript"] },
+      { title: "Developpeur fullstack - Edidebs", date: "09/2025-11/2025 · stage", icon: "bi bi-person-workspace text-info",
+        description: "Développement de l’application web bancaire Edidebs Bank",
+       skills: ["Angularjs","java spring Boot(microservices)"] },
+      { title: "Développeur Web – Université d’Angers", date: "02/2024-04/2024 · Stage académique", icon: "bi bi-laptop text-warning",
         description: "Application de suivi scolaire (Symfony + PostgreSQL). Authentification, rapports PDF, documentation.",
         skills: ["Symfony", "PostgreSQL", "Git"] },
-      { title: "Support Technique – Université d’Angers", date: "2022 · Job étudiant", icon: "bi bi-person-workspace text-info",
-        description: "Assistance aux étudiants, outils numériques, maintenance SI, helpdesk.",
+      { title: "Support Technique – Université d’Angers", date: "2022-2024 · CDD", icon: "bi bi-person-workspace text-info",
+        description: "assistance utilisateurs, gestion des tickets, déploiement et maintenance du parc, résolution d’incidents, outils bureautiques et systèmes, Active Directory, configuration réseau de base.",
         skills: ["Support technique", "Linux", "Communication"] }
     ],
-    proj_title: "🚀 Projets Académiques et Personnels",
+    proj_title: " Projets Académiques et Personnels",
     projects: [
       {
         title: "Quiz App",
@@ -48,7 +54,7 @@ const translations = {
       { title: "GTOsint", description: "Application MEAN collaborative pour l’OSINT.", image: "assets/gtosint.jpg", github: "https://github.com/gihamos/GTOsint" },
       { title: "Machine Learning", description: "Classification des émotions (Python / scikit-learn).", image: "assets/sklearn-make-classification_FEATURED-IMAGE.png", github: "https://github.com/gihamos/machinelearning" }
     ],
-    skills_title: "💻 Compétences",
+    skills_title: "Compétences",
     skills: {
       prog_title: "Langages de programmation",
       prog_list: ["Java, Kotlin, Python, C/C++, PHP, Ruby", "JavaScript/TypeScript, Bash", "R, Prolog, Haskell, C#"],
@@ -59,63 +65,119 @@ const translations = {
       db_title: "Bases de données",
       db_list: ["PostgreSQL, MySQL, MongoDB", "SQLite"],
       sys_title: "Réseaux & Systèmes",
-      sys_list: ["Linux, VirtualBox", "Concepts de communication réseau"],
+      sys_list: ["Linux, VirtualBox", "Concepts de communication réseau","power Bi/Looker","VBA/Appscript","microsoft office"],
       methods_title: "Méthodes & Langues",
       methods_list: ["Agile/Scrum, UML, Design Patterns", "Algorithmique appliquée", "Français (natif), Anglais (B2)"]
     },
-    objective_title: "🎯 Objectif Alternance",
-    objective_text: "Je recherche une alternance Full Stack / Big Data / IA à partir de janvier 2026 pour contribuer à des projets concrets et ambitieux.",
-    objective_btn: "📩 Me contacter pour une alternance",
+    objective_title: "Objectif Alternance",
+    objective_text: "Je recherche une alternance  Full Stack / Big Data / IA  au rythme 1 semaine école/3 semaines entreprise pour contribuer à des projets concrets et ambitieux.",
+    objective_btn: "Me contacter pour une alternance",
     contact_title: "📬 Contact",
     cv_label: "Voir le CV (PDF)"
   },
-  en: {
-    nav: { about: "About", experience: "Experience", projects: "Projects", skills: "Skills", objective: "Internship", contact: "Contact" },
-    sections: { about: "About" },
-    name: "Taïse De Thèse NGANGA YABIE",
-    subtitle: "AI, Big Data & Full Stack Developer in training",
-    about: [
-      "Passionate developer focused on robust, user-centered solutions.",
-      "From a CS Bachelor's to a Master's in AI, Big Data & Development, I built a strong technical foundation.",
-      "Curious, rigorous, solution-oriented; I value modular architectures and clear documentation."
-    ],
-    motto: "Motto: build clearly, iterate wisely, document elegantly.",
-    exp_title: "Professional Experience",
-    experiences: [
-      { title: "Web Developer – University of Angers", date: "2024 · Academic internship", icon: "bi bi-laptop text-warning",
-        description: "School tracking app (Symfony + PostgreSQL). Authentication, PDF reports, documentation.",
-        skills: ["Symfony", "PostgreSQL", "Git"] },
-      { title: "Technical Support Specialist – University of Angers", date: "2022 · Student job", icon: "bi bi-person-workspace text-info",
-        description: "Student tech support, digital tools, IT maintenance, helpdesk.",
-        skills: ["Technical support", "Linux", "Communication"] }
-    ],
-    proj_title: "Academic and Personal Projects",
-    projects: [
-      { title: "Sudo-help", description: "Java Sudoku game with clean architecture.", image: "assets/sudoHelp2.jpg", github: "https://github.com/Enzo-mor/Sudo-help" },
-      { title: "GTOsint", description: "Collaborative MEAN app for OSINT workflows.", image: "assets/gtosint.jpg", github: "https://github.com/gihamos/GTOsint" },
-      { title: "Machine Learning", description: "Emotion classification (Python / scikit-learn).", image: "assets/sklearn-make-classification_FEATURED-IMAGE.png", github: "https://github.com/gihamos/machinelearning" }
-    ],
-    skills_title: "Skills",
-    skills: {
-      prog_title: "Programming languages",
-      prog_list: ["Java, Kotlin, Python, C/C++, PHP, Ruby", "JavaScript/TypeScript, Bash", "R, Prolog, Haskell, C#"],
-      back_title: "Backend & DevOps",
-      back_list: ["Node.js, Express.js, Symfony, Django, FastAPI", "REST API, Docker, Git, CI/CD"],
-      front_title: "Frontend",
-      front_list: ["Angular, React", "Bootstrap"],
-      db_title: "Databases",
-      db_list: ["PostgreSQL, MySQL, MongoDB", "SQLite"],
-      sys_title: "Networks & Systems",
-      sys_list: ["Linux, VirtualBox", "Network communication concepts"],
-      methods_title: "Methods & Languages",
-      methods_list: ["Agile/Scrum, UML, Design Patterns", "Applied algorithmics", "French (native), English (B2)"]
+ en: {
+  nav: { 
+    about: "About", 
+    experience: "Experience", 
+    projects: "Projects", 
+    skills: "Skills", 
+    objective: "Internship", 
+    contact: "Contact" 
+  },
+  sections: { about: "About" },
+  name: "Taïse De Thèse NGANGA YABIE",
+  subtitle: "AI, Big Data & Full Stack Developer in training",
+  about: [
+    "Passionate developer, I enjoy designing robust, user-centered solutions.",
+    "From a Computer Science Bachelor's to a Master's in AI, Big Data & Development, I have built a solid technical foundation.",
+    "Curious, rigorous, solution-oriented, I value modular architectures and clear documentation."
+  ],
+  motto: "Motto: build clearly, iterate with finesse, document elegantly.",
+  exp_title: "Professional Experiences",
+  experiences: [
+    { 
+      title: "Data Analyst - ICC", 
+      date: "2022-2024 · volunteer", 
+      icon: "bi bi-person-workspace text-info",
+      description: "Form automation, interactive dashboards, automatic reminders, and automated connections.",
+      skills: ["Power BI/Looker", "Excel/Google Sheets", "Google/Microsoft Forms", "VBA/AppScript"] 
     },
-    objective_title: "🎯 Internship Objective",
-    objective_text: "Seeking a work-study in Full Stack / Big Data / AI from Jan 2026 to contribute to impactful, real-world projects.",
-    objective_btn: "📩 Contact me for an internship",
-    contact_title: "📬 Contact",
-    cv_label: "View CV (PDF)"
-  }
+    { 
+      title: "Fullstack Developer - Edidebs", 
+      date: "09/2025-11/2025 · internship", 
+      icon: "bi bi-person-workspace text-info",
+      description: "Development of the Edidebs Bank web application.",
+      skills: ["AngularJS", "Java Spring Boot (microservices)"] 
+    },
+    { 
+      title: "Web Developer – University of Angers", 
+      date: "02/2024-04/2024 · academic internship", 
+      icon: "bi bi-laptop text-warning",
+      description: "School tracking application (Symfony + PostgreSQL). Authentication, PDF reports, documentation.",
+      skills: ["Symfony", "PostgreSQL", "Git"] 
+    },
+    { 
+      title: "Technical Support – University of Angers", 
+      date: "2022-2024 · fixed-term contract", 
+      icon: "bi bi-person-workspace text-info",
+      description: "User support, ticket management, deployment and maintenance of IT systems, incident resolution, office tools.",
+      skills: ["Technical support", "Linux", "Communication"] 
+    }
+  ],
+  proj_title: "Academic and Personal Projects",
+  projects: [
+    {
+      title: "Quiz App",
+      description: "Interactive Android quiz application with scoring and dynamic logic (JavaScript / Bootstrap).",
+      image: "assets/quizapp.png",
+      github: "https://github.com/gihamos/quizapp"
+    },
+    {
+      title: "Chatbot",
+      description: "Interactive chatbot connected with Ollama, PDF document support, and conversational memory developed with Django.",
+      image: "assets/chatbot.png",
+      github: "https://github.com/gihamos/chatbot"
+    },
+    { 
+      title: "Sudo-help", 
+      description: "Java Sudoku game with clear architecture and intelligent help system.", 
+      image: "assets/sudoHelp2.jpg" 
+    },
+    { 
+      title: "GTOsint", 
+      description: "Collaborative MEAN application for OSINT.", 
+      image: "assets/gtosint.jpg", 
+      github: "https://github.com/gihamos/gtosint" 
+    },
+    { 
+      title: "Machine Learning", 
+      description: "Emotion classification (Python / scikit-learn).", 
+      image: "assets/sklearn-make-classification_FEATURED-IMAGE.png", 
+      github: "https://github.com/gihamos/machinelearning" 
+    }
+  ],
+  skills_title: "Skills",
+  skills: {
+    prog_title: "Programming Languages",
+    prog_list: ["Java, Kotlin, Python, C/C++, PHP, Ruby", "JavaScript/TypeScript, Bash", "R, Prolog, Haskell, C#"],
+    back_title: "Backend & DevOps",
+    back_list: ["Node.js, Express.js, Symfony, Django, FastAPI", "REST API, Docker, Git, CI/CD"],
+    front_title: "Frontend",
+    front_list: ["Angular, React", "Bootstrap"],
+    db_title: "Databases",
+    db_list: ["PostgreSQL, MySQL, MongoDB", "SQLite"],
+    sys_title: "Networks & Systems",
+    sys_list: ["Linux, VirtualBox", "Network communication concepts", "Power BI/Looker", "VBA/AppScript", "Microsoft Office"],
+    methods_title: "Methods & Languages",
+    methods_list: ["Agile/Scrum, UML, Design Patterns", "Applied algorithms", "French (native), English (B2)"]
+  },
+  objective_title: "Internship Objective",
+  objective_text: "I am looking for a Full Stack / Big Data / AI internship with a rhythm of 1 week school / 3 weeks company to contribute to impactful projects.",
+  objective_btn: "Contact me for an internship",
+  contact_title: "📬 Contact",
+  cv_label: "View CV (PDF)"
+}
+ 
 };
 
 // ================================
