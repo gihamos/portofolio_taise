@@ -1,82 +1,92 @@
-body.dark-mode {
-    /*   image de font https://picsum.photos/1920/1080?blur*/
-  background: url('https://images.pexels.com/photos/847402/pexels-photo-847402.jpeg') no-repeat center center fixed;
-  background-size: cover;
-  color: white;
-  /*scroll-behavior:smooth;*/
+:root {
+  --accent: #0d6efd;
 }
 
-body.dark-mode .glass{
-  color: rgb(156, 163, 169);
-}
 body.light-mode {
-  background: url("https://wallpapercave.com/wp/wp8561052.png");
-  background-size: cover;
+  background-color: #fdfdfd;
   color: #212529;
 }
 
-body.light-mode .glass {
-  color: #212529;
-  border: 1px solid black;
-}
-.glass {
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+body.dark-mode {
+  background-color: #0d0d0d;
+  color: #f8f9fa;
 }
 
+.navbar.fixed-top {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.hero {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
 
 .profile-pic {
   border-radius: 50%;
-  width: 160px;
-  border: 4px solid white;
-  margin-bottom: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
-/* Animation cards */
-.project-card {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
-}
-.project-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-.video-btn{
-    margin-left: 30%;
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.karo {
-  height: 100%; 
-}
-.karo img {
-  object-fit: cover; 
-  object-position: center;
+body.dark-mode .card {
+  box-shadow: 0 4px 12px rgba(255,255,255,0.08);
 }
 
-.text_apropos{
-  text-align: justify;
-}
-.text_credo{
-  text-align: justify;
-  text-decoration: dotted;
-  color: lightslategray;
-  border:2px solid lightsalmon;
-  background-color: black;
-  
-}
-.glass-nav {
-  z-index: 1050; /* supérieur à celui des autres éléments */
-}
-.hero {
-  min-height: 100vh;
-  padding-top: 100px; /* espace pour la navbar fixe */
- 
-}
-.details-projet{
-  text-align: justify;
+.motto {
+  font-style: italic;
+  color: var(--accent);
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
 }
 
+.btn-success {
+  background-color: #198754;
+  border: none;
+}
+
+.btn-success:hover {
+  filter: brightness(1.05);
+}
+
+/* CV layout */
+.cv-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.cv-left {
+  border-right: 2px solid #ddd;
+  padding-right: 20px;
+}
+
+.cv-right {
+  padding-left: 20px;
+}
+
+.cv-section h4 {
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.cv-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cv-section ul li::before {
+  content: "• ";
+  color: var(--accent);
+}
+/* Limiter la taille des images dans le carousel */
+.carousel-item img {
+  max-height: 250px;   /* hauteur maximale */
+  object-fit: contain; /* garde les proportions sans couper */
+  margin: 0 auto;      /* centre l’image */
+}
