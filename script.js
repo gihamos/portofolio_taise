@@ -38,7 +38,7 @@ const translations = {
     projects: [
       {
         title: "Quiz App",
-        description: "Application android de quiz interactive avec score et logique dynamique (JavaScript / Bootstrap).",
+        description: "Application android de quiz interactive avec score et logique dynamique (kotlin).",
         image: "assets/quizapp.png",
        github: "https://github.com/gihamos/quizapp"
         },
@@ -128,7 +128,7 @@ const translations = {
   projects: [
     {
       title: "Quiz App",
-      description: "Interactive Android quiz application with scoring and dynamic logic (JavaScript / Bootstrap).",
+      description: "Interactive Android quiz application with scoring and dynamic logic (kotlin).",
       image: "assets/quizapp.png",
       github: "https://github.com/gihamos/quizapp"
     },
