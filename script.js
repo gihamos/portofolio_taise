@@ -21,7 +21,7 @@ const translations = {
     motto: "Credo : construire clairement, itérer avec finesse, documenter élégamment.",
     exp_title: " Expériences Professionnelles",
     experiences: [
-      { title: "Data Anlyst- ICC", date: "2022-2024 · benevolat", icon: "bi bi-person-workspace text-info",
+      { title: "Data Anlyst- ICC", date: "2022-2024", icon: "bi bi-person-workspace text-info",
           description: "Automatisation formulaires, elaboartion des dashboards interactifs et  rappels automatiques et mise en relation automatique visiteur-encadrant",
         skills: ["Power Bi/looker", "excel/googlesheet", "Google/Microsoft Forms","VBA/AppScript"] },
       { title: "Developpeur fullstack - Edidebs", date: "09/2025-11/2025 · stage", icon: "bi bi-person-workspace text-info",
@@ -97,7 +97,7 @@ const translations = {
   experiences: [
     { 
       title: "Data Analyst - ICC", 
-      date: "2022-2024 · volunteer", 
+      date: "2022-2024", 
       icon: "bi bi-person-workspace text-info",
       description: "Form automation, interactive dashboards, automatic reminders, and automated connections.",
       skills: ["Power BI/Looker", "Excel/Google Sheets", "Google/Microsoft Forms", "VBA/AppScript"] 
