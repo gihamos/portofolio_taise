@@ -99,7 +99,7 @@ const translations = {
       title: "Data Analyst - ICC", 
       date: "2022-2024", 
       icon: "bi bi-person-workspace text-info",
-      description: "Process automation and development of advanced Excel forms (Apps Script, VBA), design of dynamic dashboards (Power BI, Looker) for KPI tracking, data consolidation and validation improving reporting reliability and monitoring performance by +20%, with clear and synthetic analyses to support decision-making"
+      description: "Process automation and development of advanced Excel forms (Apps Script, VBA), design of dynamic dashboards (Power BI, Looker) for KPI tracking, data consolidation and validation improving reporting reliability and monitoring performance by +20%, with clear and synthetic analyses to support decision-making",
       skills: ["Power BI/Looker", "Excel/Google Sheets", "Google/Microsoft Forms", "VBA/AppScript"] 
     },
     { 
