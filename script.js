@@ -22,7 +22,7 @@ const translations = {
     exp_title: " Expériences Professionnelles",
     experiences: [
       { title: "Data Anlyst- ICC", date: "2022-2024", icon: "bi bi-person-workspace text-info",
-          description: "Automatisation formulaires, elaboartion des dashboards interactifs et  rappels automatiques et mise en relation automatique visiteur-encadrant",
+          description: "Automatisation de processus et création de formulaires Excel avancés (Apps Script, VBA), conception de dashboards dynamiques (Power BI, Looker) pour le suivi des KPI, consolidation et contrôle des données ayant amélioré la fiabilité du reporting et la performance de suivi de +20 %, avec analyses synthétiques pour appuyer la prise de décision.",
         skills: ["Power Bi/looker", "excel/googlesheet", "Google/Microsoft Forms","VBA/AppScript"] },
       { title: "Developpeur fullstack - Edidebs", date: "09/2025-11/2025 · stage", icon: "bi bi-person-workspace text-info",
         description: "Développement de l’application web bancaire Edidebs Bank",
@@ -99,7 +99,7 @@ const translations = {
       title: "Data Analyst - ICC", 
       date: "2022-2024", 
       icon: "bi bi-person-workspace text-info",
-      description: "Form automation, interactive dashboards, automatic reminders, and automated connections.",
+      description: "Process automation and development of advanced Excel forms (Apps Script, VBA), design of dynamic dashboards (Power BI, Looker) for KPI tracking, data consolidation and validation improving reporting reliability and monitoring performance by +20%, with clear and synthetic analyses to support decision-making"
       skills: ["Power BI/Looker", "Excel/Google Sheets", "Google/Microsoft Forms", "VBA/AppScript"] 
     },
     { 
