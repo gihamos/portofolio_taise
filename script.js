@@ -26,7 +26,7 @@ const translations = {
         skills: ["Power Bi/looker", "excel/googlesheet", "Google/Microsoft Forms","VBA/AppScript"] },
       { title: "Developpeur fullstack - Edidebs", date: "09/2025-11/2025 · stage", icon: "bi bi-person-workspace text-info",
         description: "développement et amélioration de l’application bancaire EDIDEBS BANK, en React et Java Spring Boot, avec optimisation et sécurisation des microservices (paiements, offres, comptes), mise en place de CI/CD, déploiement automatisé via Docker, refonte de l’interface utilisateur, et déploiement en cours pour une banque en ligne en Éthiopie",
-       skills: ["React","java spring Boot(microservices)"] },
+       skills: ["React","java spring Boot(microservices)","Docker"] },
       { title: "Développeur Web – Université d’Angers", date: "02/2024-04/2024 · Stage académique", icon: "bi bi-laptop text-warning",
         description: "Application de suivi scolaire (Symfony + PostgreSQL). Authentification, rapports PDF, documentation.",
         skills: ["Symfony", "PostgreSQL", "Git"] },
@@ -70,7 +70,7 @@ const translations = {
       methods_list: ["Agile/Scrum, UML, Design Patterns", "Algorithmique appliquée", "Français (natif), Anglais (B2)"]
     },
     objective_title: "Objectif Alternance",
-    objective_text: "Je recherche une alternance  Full Stack / Big Data / IA  au rythme 1 semaine école/3 semaines entreprise pour contribuer à des projets concrets et ambitieux.",
+    objective_text: "Je suis à la recherche d’une alternance en développement full stack, data analyste, data engineer ou dans le domaine de l’intelligence artificielle, afin de mettre en pratique mes compétences techniques et contribuer à des projets innovants",
     objective_btn: "Me contacter pour une alternance",
     contact_title: "📬 Contact",
     cv_label: "Voir le CV (PDF)"
@@ -107,7 +107,7 @@ const translations = {
       date: "09/2025-11/2025 · internship", 
       icon: "bi bi-person-workspace text-info",
       description: "developed and enhanced the banking application EDIDEBS BANK using React & Java Spring Boot, optimizing and securing microservices (payments, promotions, accounts), implementing CI/CD, automated deployment with Docker, redesigning the user interface, and currently being deployed for an online bank in Ethiopia.",
-      skills: ["React", "Java Spring Boot (microservices)"] 
+      skills: ["React", "Java Spring Boot (microservices)","Docker"] 
     },
     { 
       title: "Web Developer – University of Angers", 
@@ -172,7 +172,7 @@ const translations = {
     methods_list: ["Agile/Scrum, UML, Design Patterns", "Applied algorithms", "French (native), English (B2)"]
   },
   objective_title: "Internship Objective",
-  objective_text: "I am looking for a Full Stack / Big Data / AI internship with a rhythm of 1 week school / 3 weeks company to contribute to impactful projects.",
+  objective_text: "I am seeking a work‑study opportunity as a full stack developer, data analyst, data engineer, or in the field of artificial intelligence, to apply my technical skills and contribute to innovative projects.",
   objective_btn: "Contact me for an internship",
   contact_title: "📬 Contact",
   cv_label: "View CV (PDF)"
@@ -231,7 +231,8 @@ function renderTexts(t) {
   const objBtn   = document.getElementById('objective_btn'); if (objBtn) objBtn.textContent = t.objective_btn;
 
   // CV trigger label (button shows generator)
-  const cvBtn = document.getElementById('cv_btn'); if (cvBtn) cvBtn.textContent = t.cv_label;
+  const cvBtn = document.getElementById('cv_btn'); 
+  if (cvBtn) cvBtn.textContent = t.cv_label;
 
   // Skills
   const s = t.skills;
@@ -335,6 +336,7 @@ function renderCV(t) {
     <div class="cv-left">
       <h3>${t.name}</h3>
       <p><strong>${t.subtitle}</strong></p>
+      <p>Mail: <a href="mailto:gihamos@gmail.com">gihamos@gmail.com</a></p>
       <div class="cv-section">
         <h4>${t.skills_title}</h4>
         <ul>
