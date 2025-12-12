@@ -51,8 +51,7 @@ const translations = {
 
 
       { title: "Sudo-help", description: "Jeu de Sudoku Java avec architecture claire avec système d'aide intelligent.", image: "assets/sudoHelp2.jpg", github: "https://github.com/Enzo-mor/Sudo-help" },
-      { title: "GTOsint", description: "conception d’une architecture web et développement d’une application de tracking de joueurs (Steam, Riot) en Angular/Node.js, avec authentification, gestion utilisateurs et base MongoDB Atlas, déployée via Docker/Kubernetes pour automatisation, scalabilité et haute disponibilité.
-          ", image: "assets/gtosint.jpg", github: "https://github.com/gihamos/GTOsint" },
+      { title: "GTOsint", description: "conception d’une architecture web et développement d’une application de tracking de joueurs (Steam, Riot) en Angular/Node.js, avec authentification, gestion utilisateurs et base MongoDB Atlas, déployée via Docker/Kubernetes pour automatisation, scalabilité et haute disponibilité.", image: "assets/gtosint.jpg", github: "https://github.com/gihamos/GTOsint" },
       { title: "Machine Learning", description: "Classification des émotions (Python / scikit-learn).", image: "assets/sklearn-make-classification_FEATURED-IMAGE.png", github: "https://github.com/gihamos/machinelearning" }
     ],
     skills_title: "Compétences",
@@ -146,8 +145,7 @@ const translations = {
     },
     { 
       title: "GTOsint", 
-      description: "designed a web architecture and built a player tracking app (Steam, Riot) in Angular/Node.js, with authentication, user management and MongoDB Atlas, deployed using Docker/Kubernetes for automation, scalability and high availability
-         ", 
+      description: "designed a web architecture and built a player tracking app (Steam, Riot) in Angular/Node.js, with authentication, user management and MongoDB Atlas, deployed using Docker/Kubernetes for automation, scalability and high availability", 
       image: "assets/gtosint.jpg", 
       github: "https://github.com/gihamos/gtosint" 
     },
