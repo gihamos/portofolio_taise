@@ -25,8 +25,9 @@ const translations = {
           description: "Automatisation de processus et création de formulaires Excel avancés (Apps Script, VBA), conception de dashboards dynamiques (Power BI, Looker) pour le suivi des KPI, consolidation et contrôle des données ayant amélioré la fiabilité du reporting et la performance de suivi de +20 %, avec analyses synthétiques pour appuyer la prise de décision.",
         skills: ["Power Bi/looker", "excel/googlesheet", "Google/Microsoft Forms","VBA/AppScript"] },
       { title: "Developpeur fullstack - Edidebs", date: "09/2025-11/2025 · stage", icon: "bi bi-person-workspace text-info",
-        description: "Développement de l’application web bancaire Edidebs Bank",
-       skills: ["Angularjs","java spring Boot(microservices)"] },
+        description: "développement et amélioration de l’application bancaire EDIDEBS BANK, en React & Java Spring Boot, avec optimisation et sécurisation des microservices (paiements, offres, comptes), mise en place de CI/CD, déploiement automatisé via Docker, refonte de l’interface utilisateur, et déploiement en cours pour une banque en ligne en Éthiopie
+       ",
+       skills: ["React","java spring Boot(microservices)"] },
       { title: "Développeur Web – Université d’Angers", date: "02/2024-04/2024 · Stage académique", icon: "bi bi-laptop text-warning",
         description: "Application de suivi scolaire (Symfony + PostgreSQL). Authentification, rapports PDF, documentation.",
         skills: ["Symfony", "PostgreSQL", "Git"] },
@@ -51,7 +52,8 @@ const translations = {
 
 
       { title: "Sudo-help", description: "Jeu de Sudoku Java avec architecture claire avec système d'aide intelligent.", image: "assets/sudoHelp2.jpg", github: "https://github.com/Enzo-mor/Sudo-help" },
-      { title: "GTOsint", description: "Application MEAN collaborative pour l’OSINT.", image: "assets/gtosint.jpg", github: "https://github.com/gihamos/GTOsint" },
+      { title: "GTOsint", description: "conception d’une architecture web et développement d’une application de tracking de joueurs (Steam, Riot) en Angular/Node.js, avec authentification, gestion utilisateurs et base MongoDB Atlas, déployée via Docker/Kubernetes pour automatisation, scalabilité et haute disponibilité.
+          ", image: "assets/gtosint.jpg", github: "https://github.com/gihamos/GTOsint" },
       { title: "Machine Learning", description: "Classification des émotions (Python / scikit-learn).", image: "assets/sklearn-make-classification_FEATURED-IMAGE.png", github: "https://github.com/gihamos/machinelearning" }
     ],
     skills_title: "Compétences",
@@ -59,12 +61,12 @@ const translations = {
       prog_title: "Langages de programmation",
       prog_list: ["Java, Kotlin, Python, C/C++, PHP, Ruby", "JavaScript/TypeScript, Bash", "R, Prolog, Haskell, C#"],
       back_title: "Backend & DevOps",
-      back_list: ["Node.js, Express.js, Symfony, Django, FastAPI", "API REST, Docker, Git, CI/CD"],
+      back_list: ["Node.js, Express.js, Symfony, Django, FastAPI", "API REST, Docker, Git, CI/CD","Kubernetes"],
       front_title: "Frontend",
       front_list: ["Angular, React", "Bootstrap"],
-      db_title: "Bases de données",
-      db_list: ["PostgreSQL, MySQL, MongoDB", "SQLite"],
-      sys_title: "Réseaux & Systèmes",
+      db_title: "Bases de données & cloud ",
+      db_list: ["PostgreSQL, MySQL, MongoDB", "SQLite", "AWS"],
+      sys_title: "Réseaux & Systèmes & business intelligence",
       sys_list: ["Linux, VirtualBox", "Concepts de communication réseau","power Bi/Looker","VBA/Appscript","microsoft office"],
       methods_title: "Méthodes & Langues",
       methods_list: ["Agile/Scrum, UML, Design Patterns", "Algorithmique appliquée", "Français (natif), Anglais (B2)"]
@@ -106,8 +108,9 @@ const translations = {
       title: "Fullstack Developer - Edidebs", 
       date: "09/2025-11/2025 · internship", 
       icon: "bi bi-person-workspace text-info",
-      description: "Development of the Edidebs Bank web application.",
-      skills: ["AngularJS", "Java Spring Boot (microservices)"] 
+      description: "developed and enhanced the banking application EDIDEBS BANK using React & Java Spring Boot, optimizing and securing microservices (payments, promotions, accounts), implementing CI/CD, automated deployment with Docker, redesigning the user interface, and currently being deployed for an online bank in Ethiopia.
+      ",
+      skills: ["React", "Java Spring Boot (microservices)"] 
     },
     { 
       title: "Web Developer – University of Angers", 
@@ -145,7 +148,8 @@ const translations = {
     },
     { 
       title: "GTOsint", 
-      description: "Collaborative MEAN application for OSINT.", 
+      description: "designed a web architecture and built a player tracking app (Steam, Riot) in Angular/Node.js, with authentication, user management and MongoDB Atlas, deployed using Docker/Kubernetes for automation, scalability and high availability
+         ", 
       image: "assets/gtosint.jpg", 
       github: "https://github.com/gihamos/gtosint" 
     },
@@ -161,12 +165,12 @@ const translations = {
     prog_title: "Programming Languages",
     prog_list: ["Java, Kotlin, Python, C/C++, PHP, Ruby", "JavaScript/TypeScript, Bash", "R, Prolog, Haskell, C#"],
     back_title: "Backend & DevOps",
-    back_list: ["Node.js, Express.js, Symfony, Django, FastAPI", "REST API, Docker, Git, CI/CD"],
+    back_list: ["Node.js, Express.js, Symfony, Django, FastAPI", "REST API, Docker, Git, CI/CD","Kubernetes"],
     front_title: "Frontend",
     front_list: ["Angular, React", "Bootstrap"],
-    db_title: "Databases",
-    db_list: ["PostgreSQL, MySQL, MongoDB", "SQLite"],
-    sys_title: "Networks & Systems",
+    db_title: "Databases & cloud",
+    db_list: ["PostgreSQL, MySQL, MongoDB", "SQLite","AWS"],
+    sys_title: "Networks & Systems & busness intelligence",
     sys_list: ["Linux, VirtualBox", "Network communication concepts", "Power BI/Looker", "VBA/AppScript", "Microsoft Office"],
     methods_title: "Methods & Languages",
     methods_list: ["Agile/Scrum, UML, Design Patterns", "Applied algorithms", "French (native), English (B2)"]
