@@ -24,9 +24,9 @@ const translations = {
       { title: "Data Anlyst- ICC", date: "2022-2024", icon: "bi bi-person-workspace text-info",
           description: "Automatisation de processus et création de formulaires Excel avancés (Apps Script, VBA), conception de dashboards dynamiques (Power BI, Looker) pour le suivi des KPI, consolidation et contrôle des données ayant amélioré la fiabilité du reporting et la performance de suivi de +20 %, avec analyses synthétiques pour appuyer la prise de décision.",
         skills: ["Power Bi/looker", "excel/googlesheet", "Google/Microsoft Forms","VBA/AppScript"] },
-      { title: "Developpeur fullstack - Edidebs", date: "09/2025-11/2025 · stage", icon: "bi bi-person-workspace text-info",
+      { title: "Developpeur fullstack - Edidebs", date: "08/2025-11/2025 · stage", icon: "bi bi-person-workspace text-info",
         description: "développement et amélioration de l’application bancaire EDIDEBS BANK, en React et Java Spring Boot, avec optimisation et sécurisation des microservices (paiements, offres, comptes), mise en place de CI/CD, déploiement automatisé via Docker, refonte de l’interface utilisateur, et déploiement en cours pour une banque en ligne en Éthiopie",
-       skills: ["React","java spring Boot(microservices)","Docker"] },
+       skills: ["React","java spring Boot(microservices)","Docker","CI/CD"] },
       { title: "Développeur Web – Université d’Angers", date: "02/2024-04/2024 · Stage académique", icon: "bi bi-laptop text-warning",
         description: "Application de suivi scolaire (Symfony + PostgreSQL). Authentification, rapports PDF, documentation.",
         skills: ["Symfony", "PostgreSQL", "Git"] },
@@ -104,10 +104,10 @@ const translations = {
     },
     { 
       title: "Fullstack Developer - Edidebs", 
-      date: "09/2025-11/2025 · internship", 
+      date: "08/2025-11/2025 · internship", 
       icon: "bi bi-person-workspace text-info",
       description: "developed and enhanced the banking application EDIDEBS BANK using React & Java Spring Boot, optimizing and securing microservices (payments, promotions, accounts), implementing CI/CD, automated deployment with Docker, redesigning the user interface, and currently being deployed for an online bank in Ethiopia.",
-      skills: ["React", "Java Spring Boot (microservices)","Docker"] 
+      skills: ["React", "Java Spring Boot (microservices)","Docker","CI/CD"] 
     },
     { 
       title: "Web Developer – University of Angers", 
